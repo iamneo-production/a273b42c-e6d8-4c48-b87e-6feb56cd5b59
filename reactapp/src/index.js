@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  rootElement
 );
+// {/* <Router></Router>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// <Router basename="/react-auth-ui/">
+// <Route exact path="/s" component={SignUpForm} />
+// <Route path="/si" component={SignInForm} />
+
+// <Route exact path="/v" component={VendorSignUP} />
+// <Route path="/vi" component={VendorSignIn} />
+
+// <Route exact path="/" component={MainLoginPageVendor} />
+// <Route path="/ven" component={MainLoginPageUser} />
+
+// <Route path="/VendorSign" component={VendorSignUP} />
+// <Route path="/UserSign" component={SignUpForm} />
+
+
+
+// </Router> */}
